@@ -5,7 +5,7 @@ import type { Locale } from "../../i18n/locale-config";
 import { NumberMarquee } from "@/components/number-marquee";
 
 const GITHUB_USERNAME = "whaiman";
-const REPO_NAME = "numerogram";
+const REPO_NAME = "page456";
 
 function slugifyQuery(raw: string): string {
   let s = raw.trim().toLowerCase();

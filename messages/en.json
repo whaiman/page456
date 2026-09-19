@@ -1,6 +1,6 @@
 {
     "Index": {
-        "title": "Numerogram",
+        "title": "page456",
         "subtitle": "From math constants to internet memes: the home for all numbers in the universe.",
         "searchPlaceholder": "Search any number (e.g. 42, pi, 100500)...",
         "searchButton": "Search",
@@ -67,10 +67,10 @@
         "rights": "All rights reserved."
     },
     "Nav": {
-        "home": "Numerogram",
+        "home": "page456",
         "infoMenuLabel": "About this project",
         "demoTitle": "This is a demo version",
-        "demoText": "Numerogram is an early, actively evolving project - some features are still missing, and the design and content are subject to change. Feel free to explore, but expect rough edges.",
+        "demoText": "page456 is an early, actively evolving project - some features are still missing, and the design and content are subject to change. Feel free to explore, but expect rough edges.",
         "supportTitle": "Support the project",
         "supportText": "Supporting via Buy Me a Coffee unlocks no premium features. Every coffee turns into an evening of work on the project. If you'd like to help this project move faster, a small donation goes a long way - thank you!",
         "supportButton": "Buy me a coffee"
