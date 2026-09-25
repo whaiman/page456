@@ -17,7 +17,8 @@ export function NumberMarquee() {
         {[...POPULAR_NUMBERS, ...POPULAR_NUMBERS].map((num, i) => (
           <span
             key={i}
-            className="mx-8 text-3xl font-black text-zinc-800 hover:text-emerald-400 transition-colors cursor-default select-none"
+            // className="mx-8 text-3xl font-black text-zinc-800 hover:text-emerald-400 transition-colors cursor-default select-none"
+            className="mx-8 text-3xl font-heading font-black text-border hover:text-primary transition-colors cursor-default select-none"
           >
             {num}
           </span>

@@ -68,6 +68,7 @@
     },
     "Nav": {
         "home": "page456",
+        "demoBadge": "Demo",
         "infoMenuLabel": "About this project",
         "demoTitle": "This is a demo version",
         "demoText": "page456 is an early, actively evolving project - some features are still missing, and the design and content are subject to change. Feel free to explore, but expect rough edges.",

@@ -46,6 +46,7 @@
     "Nav": {
         "home": "page456",
         "infoMenuLabel": "Layihə haqqında",
+        "demoBadge": "Demo",
         "demoTitle": "Bu demo versiyadır",
         "demoText": "page456 hələ inkişaf edən gənc layihədir - bəzi funksiyalar hələ yoxdur, dizayn və məzmun dəyişə bilər. Sərbəst gəzin, amma bəzi kələ-kötürlüklərə hazır olun.",
         "supportTitle": "Layihəni dəstəklə",

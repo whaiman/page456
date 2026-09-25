@@ -1,5 +1,57 @@
 @import "tailwindcss";
 
+:root {
+  /* Solarized Light */
+  --bg: #fdf6e3;
+  --surface: #eee8d5;
+  --primary: #2aa198;
+  --accent: #cb4b16;
+  --text: #576c74;
+  --text-strong: #2f3b3d;
+  --border: #d9d0b8;
+}
+
+.dark {
+  /* Nord */
+  --bg: #2e3440;
+  --surface: #444c56;
+  --primary: #a3be8c;
+  --accent: #d08770;
+  --text: #eceff4;
+  --text-strong: #ffffff;
+  --border: #4c5566;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-text: var(--text);
+  --color-text-strong: var(--text-strong);
+  --color-border: var(--border);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+@theme {
+  --animate-scroll: scroll 30s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .kao-banner {
   background: linear-gradient(180deg, #18181b 0%, #09090b 100%) !important;
   border-bottom: 2px solid #10b981 !important;
@@ -14,17 +66,4 @@
 }
 .kao-banner-close {
   color: #a1a1aa !important;
-}
-
-@theme {
-  --animate-scroll: scroll 30s linear infinite;
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 }

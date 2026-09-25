@@ -66,14 +66,23 @@ export default async function NumberPage({
       </nav>
 
       {/* Number's profile */}
-      <header className="text-center py-10 bg-zinc-900/50 rounded-3xl border border-zinc-800">
+      <header
+        // className="text-center py-10 bg-zinc-900/50 rounded-3xl border border-zinc-800"
+        className="text-center py-10 bg-surface/50 rounded-3xl border border-border"
+      >
         {isSynthetic && (
-          <span className="inline-block mb-4 text-xs font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full">
+          <span
+            // className="inline-block mb-4 text-xs font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full"
+            className="inline-block mb-4 text-xs font-bold uppercase tracking-widest bg-accent/10 text-accent border border-accent/20 px-3 py-1 rounded-full"
+          >
             ⚡ {t("generatedProfile")}
           </span>
         )}
 
-        <h1 className="text-7xl md:text-9xl font-black text-emerald-400 tracking-tighter mb-4 drop-shadow-lg">
+        <h1
+          // className="text-7xl md:text-9xl font-black text-emerald-400 tracking-tighter mb-4 drop-shadow-lg"
+          className="font-heading text-7xl md:text-9xl font-black text-primary tracking-tighter mb-4"
+        >
           {numberData.slug.toUpperCase()}
         </h1>
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -88,24 +97,49 @@ export default async function NumberPage({
 
       {/* Number's passport */}
       {isInt && (
-        <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-          <h3 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
-            📋 {t("passportTitle")}
+        <section
+          // className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"
+          className="bg-surface border border-border rounded-2xl p-6"
+        >
+          <h3
+            // className="text-xl font-bold mb-4 text-white flex items-center gap-2"
+            className="text-xl font-bold mb-4 text-text-strong flex items-center gap-2"
+          >
+            <span className="text-primary">✓</span>
+            {t("passportTitle")}
           </h3>
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-zinc-950 p-4 rounded-xl border border-zinc-800/50">
-              <span className="block text-zinc-500 text-sm mb-1">
+            <div
+              // className="bg-zinc-950 p-4 rounded-xl border border-zinc-800/50"
+              className="bg-bg p-4 rounded-xl border border-border/50"
+            >
+              <span
+                // className="block text-zinc-500 text-sm mb-1"
+                className="block text-text/60 text-sm mb-1"
+              >
                 {t("parity")}
               </span>
-              <span className="font-semibold text-lg text-zinc-200">
+              <span
+                // className="font-semibold text-lg text-zinc-200"
+                className="font-semibold text-lg text-text-strong"
+              >
                 {isEven ? t("even") : t("odd")}
               </span>
             </div>
-            <div className="bg-zinc-950 p-4 rounded-xl border border-zinc-800/50 overflow-x-auto">
-              <span className="block text-zinc-500 text-sm mb-1">
+            <div
+              // className="bg-zinc-950 p-4 rounded-xl border border-zinc-800/50 overflow-x-auto"
+              className="bg-bg p-4 rounded-xl border border-border/50 overflow-x-auto"
+            >
+              <span
+                // className="block text-zinc-500 text-sm mb-1"
+                className="block text-text/60 text-sm mb-1"
+              >
                 {t("binary")}
               </span>
-              <span className="font-mono font-semibold text-lg text-emerald-400/80">
+              <span
+                // className="font-mono font-semibold text-lg text-emerald-400/80"
+                className="font-mono font-semibold text-lg text-primary"
+              >
                 {binary}
               </span>
             </div>
@@ -167,23 +201,39 @@ async function FactsFeed({
         return (
           <article
             key={fact.id}
-            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:border-zinc-700 transition-colors"
+            // className="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:border-zinc-700 transition-colors"
+            className="bg-surface border border-border rounded-2xl p-5 hover:border-primary/40 transition-colors"
           >
             {categoryName && (
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs font-bold uppercase tracking-wider bg-zinc-800 text-zinc-300 px-2 py-1 rounded">
-                  {categoryName}
-                </span>
-              </div>
+              // <div className="flex items-center gap-2 mb-3">
+              <span
+                // className="text-xs font-bold uppercase tracking-wider bg-zinc-800 text-zinc-300 px-2 py-1 rounded"
+                className="text-xs font-bold uppercase tracking-wider bg-bg text-text px-2 py-1 rounded"
+              >
+                {categoryName}
+              </span>
+              // {/* </div> */}
             )}
-            <p className="text-zinc-200 text-lg leading-relaxed mb-4">
+            <p
+              // className="text-zinc-200 text-lg leading-relaxed mb-4"
+              className="text-text-strong text-lg leading-relaxed mb-4 mt-3"
+            >
               {getLocalizedData(fact.content, locale)}
             </p>
-            <div className="flex items-center gap-4 border-t border-zinc-800/60 pt-3">
-              <button className="flex items-center gap-1 text-sm text-zinc-400 hover:text-emerald-400 transition">
+            <div
+              // className="flex items-center gap-4 border-t border-zinc-800/60 pt-3"
+              className="flex items-center gap-4 border-t border-border/60 pt-3"
+            >
+              <button
+                // className="flex items-center gap-1 text-sm text-zinc-400 hover:text-emerald-400 transition"
+                className="flex items-center gap-1 text-sm text-text hover:text-primary transition"
+              >
                 ▲ {fact.upvotes || 0} {tCommon("upvote")}
               </button>
-              <button className="text-sm text-zinc-500 hover:text-zinc-300 transition">
+              <button
+                // className="text-sm text-zinc-500 hover:text-zinc-300 transition"
+                className="text-sm text-text/70 hover:text-text transition"
+              >
                 {tCommon("share")}
               </button>
             </div>
